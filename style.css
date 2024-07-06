@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+img {
+    width: 600px; /* Resim genişliğini 600px olarak ayarladık */
+    height: auto;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#hearts-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 61% 12%, 75% 12%, 87% 25%, 87% 37%, 75% 50%, 50% 75%, 25% 50%, 13% 37%, 13% 25%, 25% 12%, 39% 12%);
+    animation: rise 4s infinite;
+    opacity: 0;
+}
+
+@keyframes rise {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -200px);
+        opacity: 0;
+    }
+}
