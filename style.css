@@ -18,7 +18,7 @@ body {
 
 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
 }
 
@@ -78,5 +78,28 @@ button {
 
     img {
         max-width: 100%;
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 60%;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
     }
 }
