@@ -28,7 +28,6 @@ document.getElementById("no").addEventListener("mouseover", function() {
     button.style.left = newLeft + "px";
 });
 
-
 function createHearts() {
     const container = document.getElementById("hearts-container");
 

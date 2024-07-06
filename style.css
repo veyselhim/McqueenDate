@@ -11,10 +11,14 @@ body {
 .container {
     text-align: center;
     position: relative;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 img {
-    width: 600px; /* Resim genişliğini 600px olarak ayarladık */
+    width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
@@ -58,5 +62,21 @@ button {
     100% {
         transform: translate(-50%, -200px);
         opacity: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
